@@ -30,19 +30,19 @@ function auth(app){
         return res.status(401).json(details)
     })
 
-    // router.post("/logout", (req, res)=>{
-    //     const details ={
-    //         loggedOut:true
-    //     }
-    //     return res.cookie("token","",{
-    //         // nosotros desde el servidor vamos a poder definir estas propiedades para el cliente, solo el http del origen que definio esa cookie puede modificarla
-    //             httpOnly:true,
-    //         // cuando colocamos secure estamos indicando que estamos trabajando sobre https
-    //             sameSite:"none",
-    //             secure:true,
-    //             expires: new Date() //la expria la cookie ahora mismo
-    //         }).json(details)
-    //     })
+    router.post("/logout", (req, res)=>{
+        const details ={
+            loggedOut:true
+        }
+        return res.cookie("token","",{
+            // nosotros desde el servidor vamos a poder definir estas propiedades para el cliente, solo el http del origen que definio esa cookie puede modificarla
+                httpOnly:true,
+            // cuando colocamos secure estamos indicando que estamos trabajando sobre https
+                sameSite:"none",
+                secure:true,
+                expires: new Date() //la expria la cookie ahora mismo
+            }).json(details)
+        })
 
     router.post("/validate",async (req,res)=>{
         console.log(req)

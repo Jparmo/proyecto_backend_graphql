@@ -1,0 +1,92 @@
+button {
+  border: 2px solid transparent;
+  background: #ffbc42;
+  color: white;
+  font-size: 20px;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 20px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+  transition: 0.5s;
+}
+
+/* form {
+  text-align: center;
+  background-color: #0496ff;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 250px;
+  transition: border 0.5s;
+  margin: 3px;
+} */
+
+input {
+  background-color: #8c8c8cb6;
+  display: flex;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50px;
+  width: 100%;
+  padding: 20px;
+  box-shadow: inset 6px 6px 11px 0px #0d1b1e, inset -6px -6px 20px 0px #76b2bf;
+  color: white;
+  margin-bottom: 25px;
+}
+
+input::placeholder {
+    color: white;
+  }
+
+#contenedor {
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  place-items: center;
+}
+
+#hijo {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  text-align: center;
+  background-color: #0496ff;
+  border: 2px solid transparent;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 10px 0;
+  width: 350px;
+  transition: border 0.5s;
+  margin: 3px;
+  box-shadow: 9px 8px 20px #233134bf, -6px -6px 11px 0px #276a7859;
+}
+
+#title{
+  font-size: 2.3rem;
+  margin: 25px 0 15px;
+  display: inline-block;
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+  letter-spacing: 1px;
+}
